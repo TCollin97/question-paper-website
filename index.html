@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Semesters</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Paper Website</title>
 </head>
 <body>
     <h1>All Semesters</h1>
-    <div class="semesters">
+    <ul>
         {% for sem in semesters %}
-            <a href="/semester/{{ sem }}" class="semester-card">Semester {{ sem }}</a>
+            <li><a href="{{ url_for('semester', semester_id=sem) }}">Semester {{ sem }}</a></li>
         {% endfor %}
-    </div>
+    </ul>
 </body>
 </html>
