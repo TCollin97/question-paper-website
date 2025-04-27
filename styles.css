@@ -1,0 +1,130 @@
+/* General Layout */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+/* Styling for Semesters */
+.semesters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.semester-card {
+    padding: 20px 40px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 20px;
+    transition: background-color 0.3s;
+    min-width: 120px;
+}
+
+.semester-card:hover {
+    background-color: #0056b3;
+}
+
+/* Styling for Subjects */
+.subjects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.subject-card {
+    padding: 20px 40px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 20px;
+    transition: background-color 0.3s;
+    min-width: 120px;
+}
+
+.subject-card:hover {
+    background-color: #218838;
+}
+
+/* Styling for Exams (Assignments, Unit Tests, Midterms, End Terms) */
+.exams {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.exam-category {
+    padding: 20px;
+    background-color: #17a2b8; /* Light blue background for exam category */
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 20px;
+    transition: background-color 0.3s;
+    min-width: 150px; /* Ensures all cards are the same width */
+    max-width: 180px; /* To make sure all cards have the same maximum size */
+    text-align: center;
+}
+
+.exam-category:hover {
+    background-color: #138496; /* Darker blue for hover */
+}
+
+/* Optional: Different exam types with distinct colors */
+.assignments-card {
+    background-color: #007bff; /* Blue for Assignments */
+}
+
+.assignments-card:hover {
+    background-color: #0056b3; /* Darker blue for hover */
+}
+
+.unit-tests-card {
+    background-color: #ffc107; /* Yellow for Unit Tests */
+}
+
+.unit-tests-card:hover {
+    background-color: #e0a800; /* Darker yellow for hover */
+}
+
+.midterms-card {
+    background-color: #28a745; /* Green for Midterms */
+}
+
+.midterms-card:hover {
+    background-color: #218838; /* Darker green for hover */
+}
+
+.end-terms-card {
+    background-color: #dc3545; /* Red for End Terms */
+}
+
+.end-terms-card:hover {
+    background-color: #c82333; /* Darker red for hover */
+}
+
+/* Back Button */
+.back-button {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 18px;
+}
+
+.back-button:hover {
+    text-decoration: underline;
+}

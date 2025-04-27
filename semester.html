@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semester {{ semester_id }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Semester {{ semester_id }} - Subjects</h1>
+
+    <div class="subjects">
+        {% for subject in subjects %}
+            <a href="/semester/{{ semester_id }}/subject/{{ loop.index }}" class="subject-card">{{ subject }}</a>
+        {% endfor %}
+    </div>
+
+    <br>
+    <a href="/" class="back-button">⬅️ Back to Home</a>
+</body>
+</html>
